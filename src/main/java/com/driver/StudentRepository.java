@@ -75,7 +75,7 @@ public class StudentRepository {
             if(teacherstudentDb.containsKey(teacher)){
                 List<String> list = teacherstudentDb.get(teacher);
                 for(String s:list){
-                    studentDb.remove(teacher);
+                    studentDb.remove(s);
                 }
                 teacherstudentDb.remove(teacher);
             }
